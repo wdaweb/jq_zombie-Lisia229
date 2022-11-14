@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  overflow: hidden;
+  background: rgb(0, 0, 0);
+  font-family: '俐方體11號';
+}
+
+#deku {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 10;
+}
+
+
+
+.box {
+  position: relative;
+  top: 100px;
+  margin: auto;
+  width: 700px;
+  height: 700px;
+  box-shadow: 10px 10px 15px rgba(39, 201, 230, 0.5),
+    10px 10px 15px rgba(189, 230, 39, 0.5);
+}
+
+
+.game {
+  width: 700px;
+  height: 700px;
+  background: url("../svg/bg.svg") no-repeat center/cover;
+  overflow: hidden;
+}
+
+
+.mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  opacity: 0.8;
+  z-index: 10000;
+  text-align: center;
+}
+
+.list {
+  width: 35vw;
+  height: auto;
+  border: 2px dotted white;
+  margin: calc(40vh) auto;
+  padding: 10px;
+}
+
+.list h2 {
+  color: white;
+  margin: 15px auto;
+}
+
+.list h2:hover {
+  background-color: gray;
+  color: black;
+  cursor: pointer;
+}
+
+.time {
+  position: absolute;
+  text-align: right;
+  right: 10px;
+  top: 10px;
+  font-size: 25px;
+}
+
+#deku2 {
+  width: 150px;
+  position: absolute;
+  bottom: 1px;
+  pointer-events: none;
+  left: 0;
+}
+
+#again {
+  width: 110px;
+  height: 33px;
+  border: 2px solid white;
+  color: white;
+  font-size: 13px;
+  line-height: 33px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  top: 195px;
+  display: none;
+}
+
+#again:hover {
+  background: url(../images/gameover.jpg);
+  color: black;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.Introduction {
+  color: white;
+  background-color: rgb(46, 45, 45);
+  font-size: 20px;
+  padding: 10px;
+  display: none;
+}
+
+.score {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px 10px;
+  font-size: 4rem;
+}
+
+.life {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 25px;
+}
+
+.peoples {
+  z-index: 100;
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  position: absolute;
+  background-repeat: no-repeat;
+}

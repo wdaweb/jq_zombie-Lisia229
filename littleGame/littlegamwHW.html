@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deku</title>
+  <link rel="icon" href="https://www.meishujixun.com/uploads/10d813c53f052d2777ed3f5d0b426944.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/game.css">
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="mask">
+    <div class="list">
+      <h2 id="start">開始遊戲</h2>
+      <h2 id="Introduction">遊戲說明</h2>
+      <div class="Introduction">
+        <span>使用鍵盤左右鍵操控綠谷，<br>
+          蒐集人物球可+1分<br>
+          注意！！綠谷的臉要對到人物球的臉
+          分數才會增加唷～～
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="game">
+      <div class="time">
+        <span>剩餘時間</span>
+        <h1 id="time">90s</h1>
+      </div>
+      <div class="life">
+        <p>分數: <span id="text-score">0</span> 分</p>
+      </div>
+      <div>
+        <img id="deku2" class="dekuMove" src="./images/deku.gif">
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <img id="deku" src="http://5b0988e595225.cdn.sohucs.com/images/20190302/d4b5dcbc826d444e8fa177dce85d6156.gif">
+
+  <script src="./js/jquery-3.6.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./js/littlegame.js"></script>
+</body>
+
+</html>
