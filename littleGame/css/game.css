@@ -3,6 +3,13 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: '俐方體11號';
+  src: local("俐方體11號"),
+    url('../fonts/web/Cubic_11_1.013_R.woff') format("woff"),
+    url('../fonts/ttf/Cubic_11_1.013_R.ttf') format("opentype"),
+}
+
 body {
   height: 100%;
   width: 100%;
