@@ -81,10 +81,11 @@ function addDot() {
   );
   add.appendTo(".game");
   // 分數計算
-  if ($(".peoples").first().offset().top > $("#deku2").offset().top - 120 && $("#deku2").offset().left < $(".peoples").first().offset().left && $(".peoples").first().offset().left < $('#deku2').offset().left + $('#deku').innerWidth()) {
-      score++
-      $('#text-score').text(score)
-    }
+  if ($(".peoples").first().offset().top > $("#deku2").offset().top && $("#deku2").offset().left < $(".peoples").first().offset().left) {
+    score++
+    $('#text-score').text(score)
+  }
+  // && $(".peoples").first().offset().left < $('#deku2').offset().left + $('#deku').innerWidth()
 }
 
 // 點擊遊戲開始
@@ -92,8 +93,8 @@ $("#start").on("click", function () {
   // 讓遊戲開始畫面隱藏
   $(".mask").hide();
   Dot = setInterval(function () {
-    addDot(); //兩秒出現一個隨機角色
-  }, 2000);
+    addDot(); //1秒出現一個隨機角色
+  }, 1000);
   // 分數
   score = 0
   $('#text-score').text(score)
